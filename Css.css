@@ -1,0 +1,276 @@
+/* Css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* css varibles */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navBar {
+  display: flex;
+  top: 0px;
+  left: 0px;
+
+  position: sticky;
+  align-items: center;
+}
+
+#navBar::before {
+  content: "";
+  z-index: -1;
+  opacity: 0.7;
+  background-color: black;
+  color: white;
+  height: 94%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* .logo{
+    margin-left: 12px;
+    margin-top: 3px;
+} */
+#logo {
+  margin: 10px 3px;
+}
+#logo img {
+  margin: -10px 6px;
+  height: 69px;
+  width: 69px;
+  border-radius: 56%;
+}
+#navBar ul {
+  display: flex;
+}
+
+#navBar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  margin: -15px -29px;
+  /* margin no */
+}
+#navBar ul li a {
+  display: block;
+  /* padding: 22px 22px; */
+  border-radius: 20px;
+  margin: 26px 25px;
+  /* margin no */
+  text-decoration: none;
+  color: white;
+  padding: 10px 22px;
+  font-size: x-large;
+  /* uper niche no */
+  font-weight: bold;
+}
+#navBar ul li a:hover {
+  color: black;
+  background-color: white;
+  font-family: sans-serif;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 78px; */
+  /* font-family: sans-serif; */
+
+  /* position: absolute; */
+  margin-bottom: 0px;
+  height: 326px;
+  /* margin: 444px; */
+}
+#home::before {
+  content: "";
+  z-index: -1;
+  opacity: 0.9;
+  /* background: url("bg2.jpg") no-repeat center center/cover; */
+  background: url("https://media.istockphoto.com/photos/fresh-fruits-and-vegetables-picture-id589415708?b=1&k=20&m=589415708&s=170667a&w=0&h=ZDdFEXXcJxbmSsq65xTspeGgwc5cVvgX2JotlYvxliI=")
+    no-repeat center center/cover;
+  /* background-size: "height: 400px; height" ; */
+  /* background-size: 50%; */
+  /* color: white; */
+  height: 401px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+}
+
+.h-primary {
+  /* padding: 8px; */
+  font-size: 2rem;
+  font-family: sans-serif;
+
+  margin: 1.5rem;
+  text-align: center;
+  margin: 8px;
+  /* margin-bottom: 0.1rem; */
+  /* margin: -15px; */
+}
+p {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 5px;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  border-radius: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover {
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+  background-color: #0bf60b;
+}
+/* Services on */
+#services {
+  display: flex;
+}
+#services .box {
+  border: 2px solid red;
+  background: #e9e3e3;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 9px 25px;
+}
+
+#services .box img {
+  margin: auto;
+  display: block;
+  height: 100px;
+}
+
+#services .center {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 500;
+}
+#home .h-primary {
+  font-size: 2.5rem;
+  padding: 8px;
+}
+.h-secondary {
+  font-size: 1.5rem;
+  padding: 8px;
+  text-align: center;
+}
+/* Client-Section */
+#Client-Section {
+  /* height: 249px; */
+  height: auto;
+  position: relative;
+}
+#Client-Section::before {
+  content: "";
+  position: absolute;
+  background: url("https://media.istockphoto.com/photos/fresh-vegitables-picture-id172862539?b=1&k=20&m=172862539&s=170667a&w=0&h=hdv_f8qIsKp4nKCgGX6eLC41AAXKJTxP8pichbiixyQ=")
+    no-repeat center center/cover;
+  background-size: 90 * 100%;
+  width: 100%;
+  /* height: 215px;s */
+  height: 100%;
+
+  z-index: -1;
+  opacity: 0.4;
+  /* margin-top: 15px; */
+}
+#clients img {
+  height: 103px;
+  /* height: auto;*/
+}
+.client-h {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 7px;
+  font-family: sans-serif;
+  position: relative;
+  align-items: center;
+}
+#clients {
+  display: flex;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.client-item {
+  padding: 30px;
+}
+/* Contact Section */
+#contact {
+  position: relative;
+}
+#contact .h-primary {
+  position: relative;
+  top: 4px;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 87%;
+
+  margin-top: 56px;
+  /* margin-bottom: 10px; */
+
+  z-index: -1;
+  opacity: 0.96;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfbkwAwj6JIEuuYhdgtAGKu2_lxkKumDlYZXPsrFIVpEmA_QgbF75npRPTIq9czzX6JXI&usqp=CAU")
+    no-repeat center center/cover;
+}
+#Contact-box {
+  display: flex;
+  align-items: center;
+  /* Vertically center */
+  justify-content: center;
+  /* Horizontaly center */
+  padding-bottom: 34px;
+  padding-top: 34px;
+}
+#Contact-box form {
+  width: 40%;
+}
+#Contact-box label {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+#Contact-box input,
+#Contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 9px 20px;
+  margin-top: -6px;
+}
+html {
+  scroll-behavior: smooth;
+}
